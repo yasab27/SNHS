@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+  <meta charset = "utf-8">
+  <meta http-equiv="X-UA-Compatible" content= "IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <title> Bootstrap Playground </title>
+
+  <link rel ="stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <style>
+
+    body {
+      background-color: #DCE6F2;
+      padding-top: 30px;
+      font-family:"Times New Roman";
+    }
+    .navbar{
+      background-color: #28384D;
+      background-image: url("img\\header-bg.png");
+      background-repeat: repeat-x;
+    }
+    .slide1 {
+      background-image: url("img\\Spain City Photo.jpeg");
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .slide2 {
+      background-image: url("img\\SNHS Emblem.png");
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .slide3 {
+      background-image: url("img\\Mexico Building Photo.jpeg");
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+
+  </head>
+
+  <body>
+  <!-- Collapsible Navigation Bar -->
+    <div class="container-fluid" style = "padding: 0px;">
+
+    <!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
+    <nav class="navbar navbar-fixed-top navbar-static-top" >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+          <!-- Button that toggles the navbar on and off on small screens -->
+          <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+          <!-- Hides information from screen readers -->
+            <span class="sr-only"></span>
+
+            <!-- Draws 3 bars in navbar button when in small mode -->
+            <span class="icon-bar" style="background-color:#CBB856;"></span>
+            <span class="icon-bar" style="background-color:#CBB856;"></span>
+            <span class="icon-bar" style="background-color:#CBB856;"></span>
+          </button>
+
+          <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#theCarousel" style = "color: #CBB856; font-family: Times New Roman; font-size: 1.5em;">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="#about" style = "color: #CBB856; font-family: Times New Roman; font-size: 1.5em;">About</a></li>
+              <li><a href="#members" style = "color: #CBB856; font-family: Times New Roman; font-size: 1.5em;">Members</a></li>
+              <li class="dropdown" >
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style = "color: #CBB856; font-family: Times New Roman; font-size: 1.5em;">Contact Us <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Email</a></li>
+                  <li><a href="#">Phone</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Set Appointment</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- navbar-left will move the search to the left -->
+            <!-- <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form> -->
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+
+    <!-- Carousel of Page -->
+    <div id="theCarousel" class= "carousel slide" data-ride= "carousel" style = "margin-bottom: 0px; border-bottom: 30px solid #28384D;">
+
+      <!-- Define how many slides to put in the carousel -->
+      <ol class="carousel-indicators">
+        <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+        <li data-target="#theCarousel" data-slide-to="1"> </li>
+        <li data-target ="#theCarousel" data-slide-to="2"> </li>
+      </ol >
+
+      <!-- Define the text to place over the image -->
+      <div class="carousel-inner">
+
+        <div class="item active" >
+          <div class ="slide1"></div>
+          <div class="carousel-caption">
+            <img src= "img\Emblem No Text.gif" style="width: auto; height:250px;">
+            <h1 style="font-family:Times New Romans ;">La Sociedad Honora Hispanica</h1>
+            <p>Todos a Una</p>
+            <p><a href="#" class="btn btn-primary btn-sm">Aprende mas</a></p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="slide2"></div>
+          <div class="carousel-caption">
+            <h1>Thousands of Colors</h1>
+            <p>Every Color you can Imagine</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="slide3"></div>
+          <div class="carousel-caption">
+            <h1>Amazing Illustrations</h1>
+            <p>And they are All Free</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Set the actions to take when the arrows are clicked -->
+      <a class="left carousel-control" href="#theCarousel" data-slide="prev" >
+        <span class="glyphicon glyphicon-chevron-left"> </span>
+      </a>
+
+      <a class="right carousel-control" href="#theCarousel" data-slide="next" >
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+
+    </div>
+
+
+
+    <!-- Text Content of Page -->
+    <div class = "container" style= "background-color:white; padding: 25px; margin-top: 0px;" >
+
+      <div class = "row" id="about">
+        <div class = "col-lg-12 text-center">
+          <h2 style="font-family: Times New Roman; padding-bottom: 10px;" > About </h2>
+        </div>
+      </div>
+
+      <div class = "row" style="height:350px">
+
+      <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <h4> Column 1 </h4>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+          the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+          leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+      </div>
+
+      <div class = "clearfix visible-md"></div>
+
+      <div class = "clearfix visible-xs"></div>
+
+      <div class = "col-lg-4 hidden-md hidden-sm hidden-xs">
+        <img src = "img\SNHS Emblem.png" class = "img-responsive" style="width:100%; max-height: 350px; padding: 5px;"  >
+      </div>
+
+      <div class = "clearfix visible-xs"></div>
+      <div class = "clearfix visible-md"></div>
+
+      <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <h4> Column 4 </h4>
+          Norem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+          the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+          leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+      </div>
+
+    </div>
+
+    <hr style="height: 1.5em; width: 100%;" />
+
+<!-- Second Row -->
+    <div class ="clearfix visible-sm"></div>
+    <div class ="clearfix visible-md"></div>
+    <div class ="clearfix visible-xs"></div>
+
+      <div class = "row">
+        <div class = "col-lg-12 text-center">
+          <h2 style="font-family: Times New Roman; padding-bottom: 0px;" id="members"> Members </h2>
+        </div>
+      </div>
+
+      <div class="row text-center">
+
+        <div class="col-lg-2  col-sm-4 col-md-4 col-xs-6">
+          <div class="thumbnail" style= "height:auto;">
+            <img src = "img\picasso-portrait.jpg" alt="..."  style="width: 100%; height: auto;">
+            <div class="caption">
+              <h4>President</h4>
+              <p>Breno Silva</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2  col-sm-4 col-md-4 col-xs-6">
+          <div class="thumbnail" style= "height:auto;">
+            <img src = "img\picasso-portrait.jpg" alt="..."  style="width: 100%; height: auto;">
+            <div class="caption">
+              <h4>Vice President</h4>
+              <p>Malaysia Cabral</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2  col-sm-4 col-md-4 col-xs-6">
+          <div class="thumbnail" style= "height:auto;">
+            <img src = "img\picasso-portrait.jpg" alt="..."  style="width: 100%; height: auto;">
+            <div class="caption">
+              <h4>Secretary</h4>
+              <p>Yasa Baig</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2  col-sm-4 col-md-4 col-xs-6">
+          <div class="thumbnail" style= "height:auto;">
+            <img src = "img\picasso-portrait.jpg" alt="..."  style="width: 100%; height: auto;">
+            <div class="caption">
+              <h4>Treasurer</h4>
+              <p>Shannon Smally</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2  col-sm-4 col-md-4 col-xs-6">
+          <div class="thumbnail" style= "height:auto;">
+            <img src = "img\picasso-portrait.jpg" alt="..."  style="width: 100%; height: auto;">
+            <div class="caption">
+              <h4>Publicity Coordinator</h4>
+              <p>Tom Fletcher</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2  col-sm-4 col-md-4 col-xs-6">
+          <div class="thumbnail" style= "height:auto;">
+            <img src = "img\picasso-portrait.jpg" alt="..."  style="width: 100%; height: auto;">
+            <div class="caption">
+              <h4>Parliamentarian</h4>
+              <p>Taylor Caruso</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>
