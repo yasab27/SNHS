@@ -2374,6 +2374,9 @@ if (typeof jQuery === 'undefined') {
     })
   })
 
+  //Modal Functionality
+  //====================
+  
   $(function() {
       $('.pop').on('click', function() {
         $('.imagepreview').attr('src', $(this).find('img').attr('src'));
