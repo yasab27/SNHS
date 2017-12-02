@@ -92,6 +92,66 @@
 
       }
 
+      .nav-tabs-dropdown {
+        display: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .nav-tabs-dropdown:before {
+        content: "\e114";
+        font-family: 'Glyphicons Halflings';
+        position: absolute;
+        right: 30px;
+      }
+
+      @media screen and (min-width: 769px) {
+        #nav-tabs-wrapper {
+          display: block!important;
+        }
+      }
+      @media screen and (max-width: 768px) {
+          .nav-tabs-dropdown {
+              display: block;
+          }
+          #nav-tabs-wrapper {
+              display: none;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+              text-align: center;
+          }
+         .nav-tabs-horizontal {
+              min-height: 20px;
+              padding: 19px;
+              margin-bottom: 20px;
+              background-color: #f5f5f5;
+              border: 1px solid #e3e3e3;
+              border-radius: 4px;
+              -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+              box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+         }
+          .nav-tabs-horizontal  > li {
+              float: none;
+          }
+          .nav-tabs-horizontal  > li + li {
+              margin-left: 2px;
+          }
+          .nav-tabs-horizontal > li,
+          .nav-tabs-horizontal > li > a {
+              background: transparent;
+              width: 100%;
+          }
+          .nav-tabs-horizontal  > li > a {
+              border-radius: 4px;
+          }
+          .nav-tabs-horizontal  > li.active > a,
+          .nav-tabs-horizontal  > li.active > a:hover,
+          .nav-tabs-horizontal  > li.active > a:focus {
+              color: #ffffff;
+              background-color: #B30006;
+          }
+      }
+
     </style>
 
   </head>
@@ -134,13 +194,11 @@
               <li><a href="#projects" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Projects</a></li>
               <li><a href="#rules" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Rules</a></li>
               <li><a href="#calendar" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Calendar</a></li>
+              <li><a href="#minutes" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Minutes</a></li>
               <li class="dropdown" >
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Contact Us <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#" style = "color: #D6C77A;">Email</a></li>
-                  <li><a href="#" style = "color: #D6C77A;">Phone</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Set Appointment</a></li>
                 </ul>
               </li>
             </ul>
@@ -392,7 +450,6 @@
           </div>
 
           <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12 " style = "padding-top:0px;">
-            <h4 class="text-center">Column 1</h4>
              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
              Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
              quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -401,7 +458,6 @@
           </div>
 
           <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12 " style = "padding-top:0px;">
-            <h4 class="text-center">Column 2</h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
               Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
               quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -424,14 +480,13 @@
         </div>
 
 
-        <div class = "row" id="Taza-content">
+        <div class = "row" id="Taza-content" style = "margin-top: 35px;">
 
           <div class = "col-lg-4 col-md-4  col-sm-12 col-xs-12">
-            <img src = "img\Taza Disks.jpg" class = "img-responsive" style="width:100%; max-height: 350px; padding: auto; border: 10px solid #B30006; margin-top: 35px;"  >
+            <img src = "img\Taza Disks.jpg" class = "img-responsive" style="width:100%; max-height: 350px; padding: auto; border: 10px solid #B30006;"  >
           </div>
 
           <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px;">
-            <h4 class="text-center">Column 3</h4>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
             Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
             quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -441,7 +496,6 @@
 
           <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px;">
 
-            <h4 class="text-center">Column 4</h4>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
             Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
             quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -455,7 +509,7 @@
 
       <hr>
 
-      <div class = "container" id = "Painting-tab" style = "width: 100%;">
+      <div class = "container" id = "Painting-tab" style = "width: 100%; ">
 
         <div class = "row" id="'Painting-title" >
           <div class = "col-lg-12 text-center" >
@@ -463,14 +517,13 @@
           </div>
         </div>
 
-        <div class = "row" id="Painting-content">
+        <div class = "row" id="Painting-content" style = "margin-top: 35px;">
 
           <div class = "col-lg-4 col-md-4  col-sm-12 col-xs-12">
-            <img src = "img\landscape-spain.jpg" class = "img-responsive" style="width:100%; max-height: 350px;  border: 10px solid #B30006; margin-top: 35px;"  >
+            <img src = "img\landscape-spain.jpg" class = "img-responsive" style="width:100%; max-height: 350px;  border: 10px solid #B30006;"  >
           </div>
 
           <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px;">
-            <h4 class="text-center">Column 3</h4>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
             Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
             quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -478,9 +531,7 @@
             interdum eget imperdiet et, facilisis at enim. In vel lectus.
           </div>
 
-          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px;">
-
-            <h4 class="text-center"> Column 4</h4>
+          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px; vertical-align: middle; ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
             Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
             quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -555,7 +606,7 @@
 
     </div>
 
-    <div class = "container" style= "background-color:white; padding-left: 25px; padding-right: 25px; padding-top: 10px; margin-top: 0px; padding-bottom: 25px"  id="rules">
+    <div class = "container" style= "background-color:white; padding-left: 25px; padding-right: 25px; padding-top: 10px; margin-top: 0px; padding-bottom: 25px"  id="calendar-tab">
 
       <div class = "row" id="calendar" >
         <div class = "col-lg-12 text-center">
@@ -608,6 +659,76 @@
         </div>
 
       </div>
+
+    </div>
+
+    <div class = "container" style= "background-color:white; padding-left: 25px; padding-right: 25px; padding-top: 20px; margin-top: 0px; padding-bottom: 25px"  id="minutes">
+
+      <div class = "row" id="minutes-row" >
+        <div class = "col-lg-12 text-center">
+          <h2 style="font-family: Times New Roman;  padding-bottom: 15px; padding-top: 15px; background-color: #B30006; color: #F4BE03; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-decoration: none" >  Meeting Minutes  </h2>
+        </div>
+      </div>
+
+      <div class="row" style="padding-top: 10px;">
+          <div class="col-sm-3">
+              <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Dates</a>
+              <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well">
+                <li class="active"><a href="#vtab1" data-toggle="tab">October 23rd</a></li>
+                <li><a href="#vtab2" data-toggle="tab">December 5th</a></li>
+                <li><a href="#vtab3" data-toggle="tab">December 17th</a></li>
+              </ul>
+          </div>
+          <div class="col-sm-9">
+              <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="vtab1">
+                      <object data="docs\10_23_17 SHH Eboard Meeting.pdf" type="application/pdf" width="100%" height="500px">
+                        <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="docs\10_23_17 SHH Eboard Meeting.pdf">Download PDF</a>.</p>
+                      </object>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="vtab2">
+                    <object data="docs\SHH By-laws.pdf" type="application/pdf" width="100%" height="500px">
+                      <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+                    </object>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade in" id="vtab3">
+                    <object data="docs\SHH By-laws.pdf" type="application/pdf" width="100%" height="500px">
+                      <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+                    </object>
+                  </div>
+              </div>
+          </div>
+      </div>
+            <!-- <div class="tab-content">
+              <div id="home" class="tab-pane fade in active" style="height:100%">
+                <h3>Academics</h3>
+                <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
+                     Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
+                     quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
+                     Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
+                     interdum eget imperdiet et, facilisis at enim. In vel lectus.</p>
+              </div>
+              <div id="menu1" class="tab-pane fade" style="height: inherit; ">
+                <h3>Membership</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
+                     Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
+                     quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
+                     Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
+                     interdum eget imperdiet et, facilisis at enim. In vel lectus.</p>
+
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
+                      Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
+                      quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
+                      Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
+                      interdum eget imperdiet et, facilisis at enim. In vel lectus.</p>
+
+              </div> -->
+
+
+        </div>
+
+      </div>
+
 
     </div>
 
