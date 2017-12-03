@@ -14,6 +14,10 @@
 
   <body>
 
+    <!-- ///////////////////  -->
+    <!-- Introduction to Page -->
+    <!-- ///////////////////  -->
+
     <!-- Collapsible Navigation Bar -->
     <div class="container-fluid" id="Navbar-container">
     <!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
@@ -36,12 +40,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#theCarousel" class="navbar-header-element" style = "color:#D6C77A"> Home     <span class="sr-only">(current)</span></a></li>
-              <li><a href="#members"     class="navbar-header-element" style = "color:#D6C77A"> Members  </a></li>
-              <li><a href="#projects"    class="navbar-header-element" style = "color:#D6C77A"> Projects </a></li>
-              <li><a href="#rules"       class="navbar-header-element" style = "color:#D6C77A"> Rules    </a></li>
-              <li><a href="#calendar"    class="navbar-header-element" style = "color:#D6C77A"> Calendar </a></li>
-              <li><a href="#minutes"     class="navbar-header-element" style = "color:#D6C77A"> Minutes  </a></li>
+              <li><a href="#theCarousel"           class="navbar-header-element" style = "color:#D6C77A"> Home     <span class="sr-only">(current)</span></a></li>
+              <li><a href="#members-container"     class="navbar-header-element" style = "color:#D6C77A"> Members  </a></li>
+              <li><a href="#projects-container"    class="navbar-header-element" style = "color:#D6C77A"> Projects </a></li>
+              <li><a href="#rules-container"       class="navbar-header-element" style = "color:#D6C77A"> Rules    </a></li>
+              <li><a href="#calendar-container"    class="navbar-header-element" style = "color:#D6C77A"> Calendar </a></li>
+              <li><a href="#minutes-container"     class="navbar-header-element" style = "color:#D6C77A"> Minutes  </a></li>
               <li class="dropdown" >
                 <a href="#" class="dropdown-toggle navbar-header-element" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style = "color:#D6C77A">Contact Us <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -102,10 +106,12 @@
 
     </div>
 
+    <!-- ///////////////////  -->
     <!-- Text Content of Page -->
+    <!-- ///////////////////  -->
 
     <!-- Members and Officers -->
-    <div class = "container" id="Members-container">
+    <div class = "container" id="members-container">
 
       <div class = "row" style="height:auto; padding-top: 15px;" id="about">
 
@@ -266,7 +272,7 @@
     <br>
 
     <!-- Projects -->
-    <div class = "container" id="projects">
+    <div class = "container" id="projects-container">
 
       <div class = "row" id="projects" >
         <div class = "col-lg-12 text-center">
@@ -377,7 +383,7 @@
     <br>
 
     <!-- Rules and Eligibility -->
-    <div class = "container" id="rules">
+    <div class = "container" id="rules-container">
       <!-- Rules Title -->
       <div class = "row" id="rules" >
         <div class = "col-lg-12 text-center">
@@ -435,7 +441,7 @@
     </div>
 
     <!-- Calendar -->
-    <div class = "container" id="calendar-tab">
+    <div class = "container" id="calendar-container">
 
       <div class = "row" id="calendar" >
         <div class = "col-lg-12 text-center">
@@ -492,69 +498,44 @@
     </div>
 
     <!-- Minutes -->
-    <div class = "container" id="minutes">
-
+    <div class = "container" id="minutes-container">
+      <!-- Title -->
       <div class = "row" id="minutes-row" >
         <div class = "col-lg-12 text-center">
           <h2 class ="header-element" >  Meeting Minutes  </h2>
         </div>
       </div>
-
+      <!-- Content -->
       <div class="row" style="padding-top: 10px;">
-          <div class="col-sm-3">
-              <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Dates</a>
-              <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well">
-                <li class="active"><a href="#vtab1" data-toggle="tab">October 23rd</a></li>
-                <li><a href="#vtab2" data-toggle="tab">December 5th</a></li>
-                <li><a href="#vtab3" data-toggle="tab">December 17th</a></li>
-              </ul>
+        <!-- Mobile Version -->
+        <div class="col-sm-3">
+          <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Dates</a>
+          <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well">
+            <li class="active"><a href="#vtab1" data-toggle="tab">October 23rd</a></li>
+            <li><a href="#vtab2" data-toggle="tab">December 5th</a></li>
+            <li><a href="#vtab3" data-toggle="tab">December 17th</a></li>
+          </ul>
+        </div>
+
+        <!-- Desktop Vesion -->
+        <div class="col-sm-9">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="vtab1">
+              <object data="docs\10_23_17 SHH Eboard Meeting.pdf" type="application/pdf" width="100%" height="500px">
+                <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="docs\10_23_17 SHH Eboard Meeting.pdf">Download PDF</a>.</p>
+              </object>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="vtab2">
+              <object data="docs\SHH By-laws.pdf" type="application/pdf" width="100%" height="500px">
+                <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+              </object>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in" id="vtab3">
+              <object data="docs\SHH By-laws.pdf" type="application/pdf" width="100%" height="500px">
+                <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+              </object>
+            </div>
           </div>
-          <div class="col-sm-9">
-              <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="vtab1">
-                      <object data="docs\10_23_17 SHH Eboard Meeting.pdf" type="application/pdf" width="100%" height="500px">
-                        <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="docs\10_23_17 SHH Eboard Meeting.pdf">Download PDF</a>.</p>
-                      </object>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="vtab2">
-                    <object data="docs\SHH By-laws.pdf" type="application/pdf" width="100%" height="500px">
-                      <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
-                    </object>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade in" id="vtab3">
-                    <object data="docs\SHH By-laws.pdf" type="application/pdf" width="100%" height="500px">
-                      <p><b>Society Rules</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
-                    </object>
-                  </div>
-              </div>
-          </div>
-      </div>
-            <!-- <div class="tab-content">
-              <div id="home" class="tab-pane fade in active" style="height:100%">
-                <h3>Academics</h3>
-                <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
-                     Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
-                     quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
-                     Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
-                     interdum eget imperdiet et, facilisis at enim. In vel lectus.</p>
-              </div>
-              <div id="menu1" class="tab-pane fade" style="height: inherit; ">
-                <h3>Membership</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
-                     Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
-                     quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
-                     Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
-                     interdum eget imperdiet et, facilisis at enim. In vel lectus.</p>
-
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
-                      Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
-                      quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
-                      Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
-                      interdum eget imperdiet et, facilisis at enim. In vel lectus.</p>
-
-              </div> -->
-
-
         </div>
 
       </div>
@@ -564,6 +545,10 @@
     <br>
     <br>
     <br>
+
+    <!-- ///////////////////  -->
+    <!-- Footer Content of Page -->
+    <!-- ///////////////////  -->
 
     <footer class ="container-fluid text-center bg-4">
       <p> Yasa Baig 2017 </p>
