@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang = "en">
+
   <head>
     <meta charset = "utf-8">
     <meta http-equiv="X-UA-Compatible" content= "IE=edge">
@@ -7,223 +8,61 @@
     <title> SNHS Foxborough </title>
     <link rel="shortcut icon" href="http://foxborough.k12.ma.us/fps-icon-2012.ico">
     <!-- FILES ALL LOCALLY HOSTED small -->
-
-    <!-- <link rel ="stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <link rel ="stylesheet" type = "text/css" href = "css\bootstrap.min.css">
-
-    <style>
-      .carousel-caption {
-        top: 50%;
-        transform: translateY(-50%);
-        bottom: initial;
-      }
-
-      .item {
-        -webkit-transform-style: preserve-3d;
-        -moz-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      a:visited{
-        color: #F4BE03;
-        text-decoration: none;
-      }
-
-      a:active{
-        color: #F4BE03;
-        text-decoration: none;
-      }
-
-      a:hover{
-        color: #F4BE03;
-        text-decoration: none;
-      }
-
-      body {
-        background-color: white;
-        padding-top: 35px;
-        font-family:"Times New Roman";
-      }
-      .navbar{
-        background-color: #30425D;
-        <!-- background-image: url("img\\header-bg.png"); -->
-        background-repeat: repeat-x;
-      }
-      .slide1 {
-        background-image: url("img\\Foxborough Sign.jpg");
-        height: 550px;
-        background-repeat: no-repeat;
-        background-position: center ;
-        background-size: cover;
-      }
-      .slide2 {
-        background-image: url("img\\Club Photo.jpg");
-        height: 550px;
-        background-repeat: no-repeat;
-        background-position: 40% 40%;
-      }
-      .slide3 {
-        background-image: url("img\\Mexico Building Photo.jpeg");
-        height: 550px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-        .vcenter {
-      display: inline-block;
-      vertical-align: middle;
-      float: none;
-      }
-
-      .responsiveCal {
-
-        position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
-
-      }
-
-      .responsiveCal iframe {
-
-        position: absolute; top:0; left: 0; width: 100%; height: 100%;
-
-      }
-
-      .nav-tabs-dropdown {
-        display: none;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-
-      .nav-tabs-dropdown:before {
-        content: "\e114";
-        font-family: 'Glyphicons Halflings';
-        position: absolute;
-        right: 30px;
-      }
-
-      @media screen and (min-width: 769px) {
-        #nav-tabs-wrapper {
-          display: block!important;
-        }
-      }
-      @media screen and (max-width: 768px) {
-          .nav-tabs-dropdown {
-              display: block;
-          }
-          #nav-tabs-wrapper {
-              display: none;
-              border-top-left-radius: 0;
-              border-top-right-radius: 0;
-              text-align: center;
-          }
-         .nav-tabs-horizontal {
-              min-height: 20px;
-              padding: 19px;
-              margin-bottom: 20px;
-              background-color: #f5f5f5;
-              border: 1px solid #e3e3e3;
-              border-radius: 4px;
-              -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-              box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-         }
-          .nav-tabs-horizontal  > li {
-              float: none;
-          }
-          .nav-tabs-horizontal  > li + li {
-              margin-left: 2px;
-          }
-          .nav-tabs-horizontal > li,
-          .nav-tabs-horizontal > li > a {
-              background: transparent;
-              width: 100%;
-          }
-          .nav-tabs-horizontal  > li > a {
-              border-radius: 4px;
-          }
-          .nav-tabs-horizontal  > li.active > a,
-          .nav-tabs-horizontal  > li.active > a:hover,
-          .nav-tabs-horizontal  > li.active > a:focus {
-              color: #ffffff;
-              background-color: #B30006;
-          }
-      }
-
-    </style>
-
+    <link rel ="stylesheet" type = "text/css" href= "css\personalstyles.css">
   </head>
 
   <body>
+
     <!-- Collapsible Navigation Bar -->
-    <div class="container-fluid">
-
+    <div class="container-fluid" id="Navbar-container">
     <!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
-    <nav class="navbar navbar-fixed-top navbar-static-top" >
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-
-          <!-- Button that toggles the navbar on and off on small screens -->
-          <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
-          <!-- Hides information from screen readers -->
-            <span class="sr-only"></span>
-
-            <!-- Draws 3 bars in navbar button when in small mode -->
-            <span class="icon-bar" style="background-color:#F4BE03;"></span>
-            <span class="icon-bar" style="background-color:#F4BE03;"></span>
-            <span class="icon-bar" style="background-color:#F4BE03;"></span>
-
-
-          </button>
-
-
-          <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
-          <a class="pull-left" href="http://foxborough.k12.ma.us/fhs/" target="_blank"><img src="img\FPS-log.jpg" style="padding-top: 6px; padding-right: 15px; height: 45px; width: 55px; margin-left: 5px; "></a>
-
+      <nav class="navbar navbar-fixed-top navbar-static-top" >
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <!-- Button that toggles the navbar on and off on small screens -->
+            <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <!-- Hides information from screen readers -->
+              <span class="sr-only"></span>
+              <!-- Draws 3 bars in navbar button when in small mode -->
+              <span class="icon-bar" style="background-color:#F4BE03;"></span>
+              <span class="icon-bar" style="background-color:#F4BE03;"></span>
+              <span class="icon-bar" style="background-color:#F4BE03;"></span>
+            </button>
+            <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
+            <a class="pull-left" href="http://foxborough.k12.ma.us/fhs/" target="_blank"><img src="img\FPS-log.jpg" style="padding-top: 6px; padding-right: 15px; height: 45px; width: 55px; margin-left: 5px; "></a>
           </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#theCarousel" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="#members" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Members</a></li>
-              <li><a href="#projects" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Projects</a></li>
-              <li><a href="#rules" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Rules</a></li>
-              <li><a href="#calendar" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Calendar</a></li>
-              <li><a href="#minutes" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Minutes</a></li>
+              <li><a href="#theCarousel" class="navbar-header-element" style = "color:#D6C77A"> Home     <span class="sr-only">(current)</span></a></li>
+              <li><a href="#members"     class="navbar-header-element" style = "color:#D6C77A"> Members  </a></li>
+              <li><a href="#projects"    class="navbar-header-element" style = "color:#D6C77A"> Projects </a></li>
+              <li><a href="#rules"       class="navbar-header-element" style = "color:#D6C77A"> Rules    </a></li>
+              <li><a href="#calendar"    class="navbar-header-element" style = "color:#D6C77A"> Calendar </a></li>
+              <li><a href="#minutes"     class="navbar-header-element" style = "color:#D6C77A"> Minutes  </a></li>
               <li class="dropdown" >
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style = "color: #D6C77A; font-family: Times New Roman; font-size: 1.5em;">Contact Us <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle navbar-header-element" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style = "color:#D6C77A">Contact Us <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#" style = "color: #D6C77A;">Email</a></li>
                 </ul>
               </li>
             </ul>
-            <!-- <form class="navbar-form navbar-right" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form> -->
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
-    </nav>
+      </nav>
+
     </div>
 
-
-    <!-- Carousel of Page -->
-    <div id="theCarousel" class= "carousel slide" data-ride= "carousel" style = "margin-bottom: 0px; border-bottom: 30px solid #B30006;">
-
+    <!-- Carousel -->
+    <div  class= "carousel slide" id="theCarousel" data-ride= "carousel" style = "margin-bottom: 0px; border-bottom: 30px solid #B30006;">
       <!-- Define how many slides to put in the carousel -->
       <ol class="carousel-indicators">
         <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
         <li data-target="#theCarousel" data-slide-to="1"> </li>
         <li data-target ="#theCarousel" data-slide-to="2"> </li>
       </ol >
-
       <!-- Define the text to place over the image -->
       <div class="carousel-inner">
 
@@ -252,7 +91,6 @@
         </div>
 
       </div>
-
       <!-- Set the actions to take when the arrows are clicked -->
       <a class="left carousel-control" href="#theCarousel" data-slide="prev" >
         <span class="glyphicon glyphicon-chevron-left"> </span>
@@ -265,12 +103,14 @@
     </div>
 
     <!-- Text Content of Page -->
-    <div class = "container" style= "background-color:white; padding-left: 25px; padding-right: 25px; padding-top: 20px;margin-top: 0px;" >
+
+    <!-- Members and Officers -->
+    <div class = "container" id="Members-container">
 
       <div class = "row" style="height:auto; padding-top: 15px;" id="about">
 
         <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12" style = "padding-top:20px;">
-          <blockquote class = "blockquote text-center">
+          <blockquote class = "blockquote">
             <h1 class = "mb-0"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante..." </h1>
           </blockquote>
         </div>
@@ -299,7 +139,6 @@
 
       <hr style = "width: 100%;" />
 
-<!-- Second Row -->
       <div class ="clearfix visible-sm"></div>
       <div class ="clearfix visible-md"></div>
       <div class ="clearfix visible-xs"></div>
@@ -426,30 +265,29 @@
 
     <br>
 
-    <div class = "container" style= "background-color:white; padding-left: 25px; padding-right: 25px; padding-top: 20px; margin-top: 0px; padding-bottom: 25px"  id="projects">
+    <!-- Projects -->
+    <div class = "container" id="projects">
 
       <div class = "row" id="projects" >
         <div class = "col-lg-12 text-center">
-          <h2 style="font-family: Times New Roman;  padding-bottom: 15px; padding-top: 15px; background-color: #B30006; color: #F4BE03; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-decoration: none" >  Projects  </h2>
+          <h2 class ="header-element">  Projects  </h2>
         </div>
       </div>
 
       <div class = "container" id = "We-tab" style = "width: 100%;">
-
+        <!-- Title -->
         <div class = "row" id="We-title"  >
           <div class = "col-lg-12 text-center" >
             <h3 style="font-family: Times New Roman; margin-bottom: 0px;" > <a href= "#We-content" data-toggle="collapse">  We </a></h3>
           </div>
         </div>
-
-
+        <!-- "We" Description -->
         <div class = "row collapse in" id="We-content" style = "margin-top: 35px;">
-
           <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12">
             <img src = "img\We-logo.jpg" class = "img-responsive" style= "max-height:300px; width: auto; padding: auto; border: 10px solid #B30006; margin: 0 auto; "  >
           </div>
 
-          <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12 " style = "padding-top:0px;">
+          <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12 " style = "padding-top:5px;">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
              Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
              quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -457,36 +295,32 @@
              interdum eget imperdiet et, facilisis at enim. In vel lectus.
           </div>
 
-          <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12 " style = "padding-top:0px;">
+          <div class = "col-lg-4 col-md-12 col-sm-12 col-xs-12 " style = "padding-top:5px;">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
               Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
               quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
               Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
               interdum eget imperdiet et, facilisis at enim. In vel lectus.
           </div>
-
         </div>
-
       </div>
 
       <hr>
 
       <div class = "container" id = "Taza-tab" style = "width: 100%;">
-
+        <!-- Title -->
         <div class = "row" id="Taza-title" >
           <div class = "col-lg-12 text-center" >
             <h3 style="font-family: Times New Roman;  margin-bottom: 0px;" ><a href= "#Taza-content" data-toggle="collapse"> Taza </a> </h3>
           </div>
         </div>
-
-
+        <!-- "Taza" Container -->
         <div class = "row" id="Taza-content" style = "margin-top: 35px;">
-
           <div class = "col-lg-4 col-md-4  col-sm-12 col-xs-12">
             <img src = "img\Taza Disks.jpg" class = "img-responsive" style="width:100%; max-height: 350px; padding: auto; border: 10px solid #B30006;"  >
           </div>
 
-          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px;">
+          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:5px;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
             Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
             quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -494,7 +328,7 @@
             interdum eget imperdiet et, facilisis at enim. In vel lectus.
           </div>
 
-          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px;">
+          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:5px;">
 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
             Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
@@ -502,28 +336,25 @@
             Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
             interdum eget imperdiet et, facilisis at enim. In vel lectus.
           </div>
-
         </div>
-
       </div>
 
       <hr>
 
       <div class = "container" id = "Painting-tab" style = "width: 100%; ">
-
+        <!-- Title -->
         <div class = "row" id="'Painting-title" >
           <div class = "col-lg-12 text-center" >
             <h3 style="font-family: Times New Roman;  margin-bottom: 0px;" ><a href= "#Painting-content" data-toggle="collapse">  Wall Painting </a> </h3>
           </div>
         </div>
-
+        <!-- "Wall Painting" Content -->
         <div class = "row" id="Painting-content" style = "margin-top: 35px;">
-
           <div class = "col-lg-4 col-md-4  col-sm-12 col-xs-12">
             <img src = "img\landscape-spain.jpg" class = "img-responsive" style="width:100%; max-height: 350px;  border: 10px solid #B30006;"  >
           </div>
 
-          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px;">
+          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:5px;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
             Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
             quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
@@ -531,32 +362,30 @@
             interdum eget imperdiet et, facilisis at enim. In vel lectus.
           </div>
 
-          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:0px; vertical-align: middle; ">
+          <div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 " style = "padding-top:5px; vertical-align: middle; ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices varius pretium.
             Duis pharetra leo eu augue pharetra, sit amet placerat tortor venenatis. Etiam vitae orci nisi. Nunc justo
             quam, maximus et posuere sed, facilisis id quam. Curabitur accumsan aliquam sapien, eget malesuada diam imperdiet at. Quisque varius pretium dignissim.
             Nam hendrerit turpis vitae porttitor euismod. Maecenas scelerisque erat eget sapien hendrerit, gravida laoreet sem consequat. Nulla ac cursus leo. Nam tempus erat rutrum lectus placerat feugiat. Pellentesque dolor massa,
             interdum eget imperdiet et, facilisis at enim. In vel lectus.
           </div>
-
         </div>
 
     </div>
-
     </div>
 
     <br>
 
-    <div class = "container" style= "background-color:white; padding-left: 25px; padding-right: 25px; padding-top: 20px; margin-top: 0px; padding-bottom: 25px"  id="rules">
-
+    <!-- Rules and Eligibility -->
+    <div class = "container" id="rules">
+      <!-- Rules Title -->
       <div class = "row" id="rules" >
         <div class = "col-lg-12 text-center">
-          <h2 style="font-family: Times New Roman;  padding-bottom: 15px; padding-top: 15px; background-color: #B30006; color: #F4BE03; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-decoration: none" >  Rules & Eligibility  </h2>
+          <h2 class ="header-element" >  Rules & Eligibility  </h2>
         </div>
       </div>
-
-      <div class = "container" id = "We-tab" style = "width: 100%;">
-
+      <!-- Rules and Constitution Content -->
+      <div class = "container" id = "Rules-tab" style = "width: 100%;">
         <div class = "row" id="Rles = PDF" style = "margin-top: 35px;">
 
           <div class = "col-lg-5 col-md-12 col-sm-12 col-xs-12 " style = "padding-top:0px; padding-bottom: 10px; margin-bottom: 0px; ">
@@ -589,7 +418,6 @@
                       interdum eget imperdiet et, facilisis at enim. In vel lectus.</p>
 
               </div>
-
             </div>
 
           </div>
@@ -606,11 +434,12 @@
 
     </div>
 
-    <div class = "container" style= "background-color:white; padding-left: 25px; padding-right: 25px; padding-top: 10px; margin-top: 0px; padding-bottom: 25px"  id="calendar-tab">
+    <!-- Calendar -->
+    <div class = "container" id="calendar-tab">
 
       <div class = "row" id="calendar" >
         <div class = "col-lg-12 text-center">
-          <h2 style="font-family: Times New Roman;  padding-bottom: 15px; padding-top: 15px; background-color: #B30006; color: #F4BE03; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-decoration: none" >  Calendar  </h2>
+          <h2 class ="header-element" >  Calendar  </h2>
         </div>
       </div>
 
@@ -662,11 +491,12 @@
 
     </div>
 
-    <div class = "container" style= "background-color:white; padding-left: 25px; padding-right: 25px; padding-top: 20px; margin-top: 0px; padding-bottom: 25px"  id="minutes">
+    <!-- Minutes -->
+    <div class = "container" id="minutes">
 
       <div class = "row" id="minutes-row" >
         <div class = "col-lg-12 text-center">
-          <h2 style="font-family: Times New Roman;  padding-bottom: 15px; padding-top: 15px; background-color: #B30006; color: #F4BE03; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-decoration: none" >  Meeting Minutes  </h2>
+          <h2 class ="header-element" >  Meeting Minutes  </h2>
         </div>
       </div>
 
@@ -729,7 +559,6 @@
 
       </div>
 
-
     </div>
 
     <br>
@@ -741,8 +570,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
     <script src="js\bootstrap.js"></script>
 
   </body>
+
 </html>

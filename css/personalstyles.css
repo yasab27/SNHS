@@ -1,0 +1,172 @@
+
+.carousel-caption {
+top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+}
+
+.navbar-header-element
+{
+  color: #D6C77A;
+  font-family: "Times New Roman";
+  font-size: 1.5em;
+}
+
+.container
+{
+  background-color:white;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  margin-top: 0px;"
+}
+
+#Filler-tab
+{
+  padding-top:10px;
+}
+
+.header-element
+{
+  font-family: "Times New Roman";
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #B30006;
+  color: #F4BE03;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none"
+}
+
+.item {
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+a:visited{
+color: #F4BE03;
+text-decoration: none;
+}
+
+a:active{
+color: #F4BE03;
+text-decoration: none;
+}
+
+a:hover{
+color: #F4BE03;
+text-decoration: none;
+}
+
+body {
+background-color: white;
+padding-top: 35px;
+font-family:"Times New Roman";
+}
+.navbar{
+  background-color: #30425D;
+  <!-- background-image: url("..\\img\\header-bg.png"); -->
+  background-repeat: repeat-x;
+}
+.slide1 {
+  background-image: url("..\\img\\Foxborough Sign.jpg");
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+.slide2 {
+  background-image: url("..\\img\\Club Photo.jpg");
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: 40% 40%;
+}
+.slide3 {
+  background-image: url("..\\img\\Mexico Building Photo.jpeg");
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.vcenter {
+display: inline-block;
+vertical-align: middle;
+float: none;
+}
+
+.responsiveCal {
+
+position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+
+}
+
+.responsiveCal iframe {
+
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+
+}
+
+.nav-tabs-dropdown {
+display: none;
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+}
+
+.nav-tabs-dropdown:before {
+content: "\e114";
+font-family: 'Glyphicons Halflings';
+position: absolute;
+right: 30px;
+}
+
+@media screen and (min-width: 769px) {
+#nav-tabs-wrapper {
+display: block!important;
+}
+}
+@media screen and (max-width: 768px) {
+.nav-tabs-dropdown {
+  display: block;
+}
+#nav-tabs-wrapper {
+  display: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  text-align: center;
+}
+.nav-tabs-horizontal {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+.nav-tabs-horizontal  > li {
+  float: none;
+}
+.nav-tabs-horizontal  > li + li {
+  margin-left: 2px;
+}
+.nav-tabs-horizontal > li,
+.nav-tabs-horizontal > li > a {
+  background: transparent;
+  width: 100%;
+}
+.nav-tabs-horizontal  > li > a {
+  border-radius: 4px;
+}
+.nav-tabs-horizontal  > li.active > a,
+.nav-tabs-horizontal  > li.active > a:hover,
+.nav-tabs-horizontal  > li.active > a:focus {
+  color: #ffffff;
+  background-color: #B30006;
+}
+}
